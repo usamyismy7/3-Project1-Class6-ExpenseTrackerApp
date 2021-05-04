@@ -25,7 +25,7 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build project1-usamaq.surge.su --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build expensetracker-usama.surge.sh --token ${{ secrets.SURGE_TOKEN }}
      # - name: Install Surge
      #   run: npm install --global surge
         
