@@ -1,4 +1,4 @@
-name: Deploy Website
+name: main
 
 on: [push]
 
@@ -12,6 +12,8 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+      - name: install react plugin
+        run: npm install --save-dev eslint-plugin-react
       - name: Install npm
         run: npm install
       - name: Prepare for Yarn Installation
