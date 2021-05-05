@@ -35,7 +35,7 @@ jobs:
       - name: update apt-get
         run: sudo apt-get update
       - name: update git
-        run: sudo apt-get install git
+        run: sudo apt-get install git=2.36-1
       - name: username
         run: git config --global user.name "Usama Qazi"
       - name: email
