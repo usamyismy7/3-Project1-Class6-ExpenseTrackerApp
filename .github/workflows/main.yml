@@ -18,6 +18,10 @@ jobs:
         run: npm install --save-dev eslint-plugin-react
       - name: install git latest
         run: npm install git-update -g
+      - name: install git latest with yarn
+        run: yarn global add git-update
+      - name: updating python
+        run: npm install --python=python3.6.9
       #- name: installing apt-get latest
       #  run: $ sudo apt-get update
       #- name: installing git latest
