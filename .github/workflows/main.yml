@@ -37,8 +37,14 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
       
+    - name: username
+      run: git config --global user.name "Usama Qazi"
+      
+    - name: email
+      run: git config --global user.email "usamyharis@yahoo.com"
+      
     - name: adding username
-      run: surge . --add usamyharis@yahoo.com
+      run: surge --add usamyharis@yahoo.com
       
     - name: Deploy to Surge
       run: surge ./build expensetracker-usama.surge.sh --token ${{ secrets.SURGE_TOKEN }}
