@@ -6,9 +6,9 @@
 
 ## Introduction
 
-This is a Expense Tracker Application. 
+This is a Expense Tracker App. 
 
-We have used React app using hooks (useState, useContext, useReducer) and the context API.
+React JS Project using Hooks (useState, useContext, useReducer) and the context API.
 
 Setup:
 - run ```npm i && npm start```
